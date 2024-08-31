@@ -26,17 +26,17 @@ used remix IDE with/ injected Metamask to connect with Root Network testnet.
 
 1.  Factory contract which creates each Quiz Fund contract.
 
-    contract QuizFactory {
-    QuizFund[] public \_QuizFunds;
-    uint256 public totalNumberOfQuiz;
+        contract QuizFactory {
+            QuizFund[] public \_QuizFunds;
+            uint256 public totalNumberOfQuiz;
 
-        function createNewFund() public {
-            QuizFund fund = new QuizFund(msg.sender);
-            _QuizFunds.push(fund);
-            totalNumberOfQuiz += 1;
+            function createNewFund() public {
+                QuizFund fund = new QuizFund(msg.sender);
+                _QuizFunds.push(fund);
+                totalNumberOfQuiz += 1;
+            }
+
         }
-
-    }
 
 2.  Quiz Fund Contract
 

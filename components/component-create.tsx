@@ -167,10 +167,6 @@ function ProblemComponent(props: { idx: number; problem: any; onChange: any }) {
                     </button>
                     <Input
                       type="text"
-                      value={option.title}
-                      onChange={(e) => {
-                        //props.onChange(props.idx, "title", e.target.value);
-                      }}
                       className="text-lg text-card-foreground"
                     />
                   </div>
